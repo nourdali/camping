@@ -167,50 +167,40 @@
         <h2 class="section__header">What our client say</h2>
         <div class="client__grid">
           <div class="client__card">
-            <img src="../assets/nour.jpg" alt="client" />
+            <img src="../assets/client-1.jpg" alt="client" />
             <p>
-              The booking process was seamless, and the confirmation was
-              instant. I highly recommend WDM&Co for hassle-free hotel bookings.
+              The booking 
             </p>
             
           </div>
           <div class="client__card">
-            <img src="../assets/nour.jpg" alt="client" />
+            <img src="../assets/client-2.jpg" alt="client" />
             <p>
-              The booking process was seamless, and the confirmation was
-              instant. I highly recommend WDM&Co for hassle-free hotel bookings.
+              The booking 
             </p>
           </div>
           <div class="client__card">
-            <img src="../assets/nour.jpg" alt="client" />
+            <img src="../assets/client-4.jpg" alt="client" />
             <p>
-              The booking process was seamless, and the confirmation was
-              instant. I highly recommend WDM&Co for hassle-free hotel bookings.
+              The booking 
             </p>
           </div>
           <div class="client__card">
-            <img src="../assets/nour.jpg" alt="client" />
+            <img src="../assets/client-3.jpg" alt="client" />
             <p>
-              The website provided detailed information about hotel, including
-              amenities, photos, which helped me make an informed decision.
-            </p>
-          </div>
-          <div class="client__card">
-            <img src="../assets/nour.jpg" alt="client" />
-            <p>
-              The website provided detailed information about hotel, including
-              amenities, photos, which helped me make an informed decision.
+              The website 
             </p>
           </div>
         </div>
       </div>
     </section>
+ 
 
     
    <!-- application mobile-->
     <section class="section__container about__container" id="about">
       <div class="about__image">
-        <img :src="image" alt="about" />
+        <img src="../assets/mobile.png" alt="about" />
       </div>
       <div class="about__content">
         <h2 class="section__header">Easy Way To Go To Your Next Station</h2>
@@ -282,7 +272,7 @@ export default {
   },
  
    data: () => ({
-   image:require('../assets/about.png'),
+   //image:require('../assets/about.png'),
    open:false
    })
  }; 
@@ -588,40 +578,40 @@ ul {
 .client__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
 }
 .client__grid__star {
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 5rem;
 }
 .client__card__star {
   padding: 2rem;
-  background-color: var(--white);
-  border-radius: 1rem;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+ 
+  
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  box-shadow: 15px 40px 20px rgba(10, 10, 0, 0.1);
 }
 .client__card__star img {
-  max-width: 250px;
-  max-height: 100px;
-  margin: auto;
+ width: 180px;
+ height: 260px;
+ border-radius: 2rem;
+ margin: auto;
   margin-bottom: 1rem;
 
 }
-.client__card {
-  padding: 2rem;
-  background-color: var(--white);
-  border-radius: 1rem;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
-}
+
 
 .client__card img {
-  max-width: 80px;
+  width: 200px;
+  box-shadow: 30px 30px 20px #6c6b6b;
   margin: auto;
   margin-bottom: 1rem;
-  border-radius: 100%;
+  
 }
 
 .client__card p {
@@ -631,11 +621,11 @@ ul {
 .section__container {
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
 }
 
 .section__header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-dark);
 }
@@ -652,7 +642,7 @@ ul {
 }
 
 .about__image img {
-  max-width: 300px;
+  max-width: 170px;
   margin: auto;
 }
 
@@ -753,7 +743,7 @@ ul {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(30deg, rgb(100, 241, 84), rgb(92, 92, 229), rgb(111, 30, 30));
+    background: #dedad7;
 }
 
 .imgContainer{
@@ -799,56 +789,56 @@ ul {
 
 #slider1:target ~ .imgContainer #img1,
 #slider1:target ~ .imgContainer #button1{
-    width: 390px;
-    height: 600px;
+  width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider2:target ~ .imgContainer #img2,
 #slider2:target ~ .imgContainer #button2{
-    width: 390px;
-    height: 600px;
+  width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider3:target ~ .imgContainer #img3,
 #slider3:target ~ .imgContainer #button3{
-    width: 390px;
-    height: 600px;
+  width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider4:target ~ .imgContainer #img4,
 #slider4:target ~ .imgContainer #button4{
-    width: 390px;
-    height: 600px;
+    width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider5:target ~ .imgContainer #img5,
 #slider5:target ~ .imgContainer #button5{
-    width: 390px;
-    height: 600px;
+    width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider6:target ~ .imgContainer #img6,
 #slider6:target ~ .imgContainer #button6{
-    width: 390px;
-    height: 600px;
+    width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }
 
 #slider7:target ~ .imgContainer #img7,
 #slider7:target ~ .imgContainer #button7{
-    width: 390px;
-    height: 600px;
+    width: 250px;
+    height: 500px;
     background-color: transparent;
     filter: saturate(100%);
 }

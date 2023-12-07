@@ -3,7 +3,9 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Contact from '../views/ContactView.vue'
 import Profil from '../views/ProfilView.vue'
+import Detail from '../views/DetailView.vue'
 import Services from '../views/ServicesView.vue'
+import Exemple from '../views/ExpView.vue'
 
 Vue.use(VueRouter)
 
@@ -19,11 +21,20 @@ const routes = [
     component:Contact
   },
   {
+    path: '/exemple',
+   
+    component:Exemple
+  },
+  {
     path: '/profil',
    
     component:Profil
   },
- 
+  {
+    path: '/detail',
+   
+    component:Detail
+  },
   {
     path: '/services',
    

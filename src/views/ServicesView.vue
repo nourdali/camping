@@ -178,7 +178,7 @@
       --main-color:#514c54;
       --black:#222;
       --white:#fff;
-      --light-black:#777;
+      --light-black:#EEF;
       --light-white:#fff9;
       --dark-bg:rgba(20, 20, 20, 0.7);
       --light-bg:#eee;
@@ -251,12 +251,11 @@
   }
   .services .box-container .box {
       text-align: center;
-      background: #8e78787a;
-      padding: 3rem 2rem;
+      background: #dedad7 2rem;
       cursor: pointer;
   }
   .services .box-container .box:hover{
-      background: rgb(177, 159, 159);
+      background-color: #b9b4ad;
   }
   .services .box-container .box img{
       height: 7rem;
@@ -279,7 +278,7 @@
   .home-packages .box-container .box {
       border: var(--border);
       box-shadow: var(--box-shadow);
-      background: var(--white);
+      background: var(--light-bg);
   }
   .home-packages .box-container .box .image{
       height: 25rem;
@@ -303,7 +302,7 @@
   }
   .home-packages .box-container .box .content p{
       font-size: 1.5rem;
-      color: var(--light-black);
+      color: rgb(187, 170, 170);
       line-height: 2;
       padding: 1rem 0;
   }
